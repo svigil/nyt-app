@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS reset -->
+    <link rel="stylesheet" type="text/css" src="assets/css/reset.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document Title</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <h2 class="mx-auto" style="color:white"> New York Times Search</h2>
+    </nav>
+
+    <div class="container border border-info mt-2" id="searchContainer">
+        <div class="row mb-2">
+                <div class="col-sm-12" style="background-color:silver">
+                    <h5 class="mt-2 fa fa-newspaper-o"> Search Parameters<h5>
+                </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Search Term: </label>
+                <input type="text" class="form-control" id="searchTerm" rows="3"></input>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Number of Records to Retrieve: </label>
+                <input type="text" class="form-control" id="numberRecords" rows="3"></input>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Start Year (Optional): </label>
+                <input type="text" class="form-control" id="startYear" rows="3"></input>
+            </div>
+        </div>
+        <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">End Year (Optional):</label>
+                    <input type="text" class="form-control" id="endYear" rows="3"></input>
+                </div>
+        </div>
+        <div class="row mt-2 mb-2 ml-2"> 
+            <button type="button" class="btn btn-secondary mr-2 fa fa-search" id="searchButton"> Search</button>
+            <button type="button" class="btn btn-secondary fa fa-trash" id="clearButton"> Clear</button>
+        </div>
+    </div>
+
+    <div class="container border border-info mt-2 id="resultsContainer">
+        <div class="row mb-2">
+            <div class="col-sm-12" style="background-color:silver">
+                <h5 class="mt-2 fa fa-calendar""> Top Articles<h5>
+            </div>
+            <div class="row">
+                <div class="col-sm-12" id=putArticlesHere>
+                </div>
+            </div>
+    </div>
+
+    <!-- javascript  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/index.js"></script>
+
+</body>
+
+</html>
